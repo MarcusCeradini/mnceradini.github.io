@@ -39,6 +39,10 @@
 - [Youtube](https://youtube.com/) - It has videos to watch. I watch the videos it has.
 - [Coolmathgames](https://coolmathgames.com/) - You can never go wrong with it. I used it because I was thinking about games to play after finishing my assignments.
 
+
+## My Mermaid Charts
+
+### Networking
 ```mermaid
 flowchart TD;
 Are_you_in_Networking-->Yes;
@@ -47,6 +51,7 @@ Yes-->Be_in_Pain_thinking_about_it;
 No-->Be-in_Pain_thinking_about_it;
 ```
 
+### NOS Midterm
 ``` mermaid
 flowchart TD
     A(Are you in NOS) -->|Yes| B(Did you take the midterm)-->|No|A
