@@ -1,0 +1,11 @@
+```mermaid
+flowchart TD
+Start([Start]) --> Gen[Generate Random Number]
+Gen --> A[/User guess/]
+A --> Guess{Is numeric?}
+Guess --> |No| A
+Guess --> |Yes| C{Guess is low?} --> |yes| low[print: Too Low] --> A
+C --> |No| D{Is it to big?}
+D --> E[Yes] --> Big[print: Too Big] --> A
+D --> |No| F([print: YOU WIN!!!])
+```
