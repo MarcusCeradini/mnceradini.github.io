@@ -1,0 +1,26 @@
+```mermaid
+erDiagram
+    Customers ||--o{ Sales : makes
+    Customers {
+        int orderNumber
+        string deliveryAddress
+    }
+    Sales||--|{ Products : Is_sold_in
+    Sales {
+        string productCode
+        int quantity
+        float pricePerUnit
+    }
+
+    Inventory{
+        Hello Bye
+
+    }
+    Products ||--o{ Inventory : Tracker_through
+    Products {
+        string name
+        string custNumber
+        string sector
+    }
+
+```
