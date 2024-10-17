@@ -33,3 +33,18 @@ erDiagram
     }
 
 ```
+
+# Descriptions
+### Customers
+- Customer ID: Unique ID for the customer
+
+### Sales
+- Sale ID: Each sale has a unique code for tracking and if you have problems customer service may ask for it
+- Order Date: Time and date you order the product
+
+### Products
+- Product ID: ID for each product
+- Model: Shoe model
+
+### Inventory
+- Product Stock: Amount of stock for specified products
