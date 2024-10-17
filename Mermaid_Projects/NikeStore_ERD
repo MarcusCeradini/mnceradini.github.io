@@ -1,26 +1,35 @@
 ```mermaid
 erDiagram
-    Customers ||--o{ Sales : makes
-    Customers {
-        int orderNumber
-        string deliveryAddress
+    Customer ||--o{ Sales : Makes
+    Customer {
+        nvarchar CustomerID PK
+        string Name
+        nvarchar Email
+        nvarchar Address
+        int(5) Zipcode
+
     }
-    Sales||--|{ Products : Is_sold_in
+    Sales||--|{ Products : "Is sold in"
     Sales {
-        string productCode
-        int quantity
-        float pricePerUnit
+        int SaleID PK
+        date Date
+        int Quantity
+        datetime OrderDate
+        nvarchar CustomerID FK
+        nvarchar ProductID FK
     }
 
     Inventory{
-        Hello Bye
+        int ProductStock
+        nvarchar ProductID FK
 
     }
-    Products ||--o{ Inventory : Tracker_through
+    Products ||--o{ Inventory : "Tracker through"
     Products {
-        string name
-        string custNumber
-        string sector
+        int ProductID PK
+        nvarchar ProductName
+        string Model
+        nvarchar Size
     }
 
 ```
