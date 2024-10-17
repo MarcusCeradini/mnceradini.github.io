@@ -1,0 +1,12 @@
+~~~ mermaid
+sequenceDiagram
+    Attacker->>+Control Server: Attacker send multipule (hundreds to thousands) attack bots into the control server
+    Attacker->>+Attackbot: After breach, attacker releases "attack" signal to cause attackbot to repeatedly sending requests to server
+    Attackbot-->>+ Webserver: Starts sending requests after "attack" signal is received
+    Webserver-->>-Control Server: Too many request coming in to process, blocks traffic from control server
+~~~
+# Step by Step
+1. Attacker send multipule attack bots into the control server
+2. Attack bots connect to the main server
+3. Bots send attack signals to main server overloading it
+4. Main server gets overloaded in signals and refuses oncoming requests
