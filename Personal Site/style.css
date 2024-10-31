@@ -1,19 +1,25 @@
 body{
     background-color: #93979D;
 }
+
+image {
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .border{
-    border: 10px Black;
+    border: 5px solid rgb(48, 59, 122);
 }
 nav{
     position: fixed;
-    top: 0;
+    top: 3;
     width: 100%;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
 
-.navBar{
+.navbar{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,16 +31,17 @@ nav{
 }
 
 
-.navBar li{
+.navbar li{
     float: left;
-    border-right: 1px solid #475671;
+    border-right: 1px solid #2d333f;
 }
 
-.navBar li:last-child {
+.navbar li:last-child {
     border-right: none;
+    text-align: center;
   }
 
-.navBar li a{
+.navbar li a{
     display: block;
     color: white;
     text-align: center;
@@ -42,6 +49,13 @@ nav{
     text-decoration: none;
 }
 
-.navBar li a:hover{
+.navbar li a:hover{
     color: #fa0400;
 }
+
+@media screen and (max-width: 600px){
+    .column{
+        width:100%;
+    }
+}
+
