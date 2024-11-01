@@ -1,16 +1,19 @@
+/* Color Palette
+background color: #93979D
+Nav bar color: #556473
+
+*/
 body{
     background-color: #93979D;
 }
 
-image {
-    width: 50px;
+.image {
+    width: 110px;
     border-radius: 50%;
     display: inline-block;
+    position: center;
 }
 
-.border{
-    border: 5px solid rgb(48, 59, 122);
-}
 nav{
     position: fixed;
     top: 3;
@@ -23,10 +26,10 @@ nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position:sticky;
+    position: sticky;
     top:0;
     overflow: hidden;
-    background-color:#aaacb3;
+    background-color:#556473;
     height:auto;
 }
 
@@ -43,7 +46,7 @@ nav{
 
 .navbar li a{
     display: block;
-    color: white;
+    color: rgba(255, 255, 255, 0.521);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -53,9 +56,32 @@ nav{
     color: #fa0400;
 }
 
+.column{
+    float: left;
+    width: 30%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
 @media screen and (max-width: 600px){
     .column{
-        width:100%;
+        width:50%;
     }
 }
 
+.section_titles{
+    color: #F0C548;
+    text-align: Center;
+}
+a:hover{
+    color: #c50e0e;
+}
+.cards{
+    border: 5px #aaacb3;
+    background-color: #508897;
+    border-radius: 3px;
+    margin: 3px;
+}
