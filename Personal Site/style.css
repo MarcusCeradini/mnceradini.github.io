@@ -57,7 +57,7 @@ nav{
     color: #fa0400;
 }
 
-.column{
+/*.column{
     float: left;
     width: 30%;
 }
@@ -85,4 +85,18 @@ a:hover{
     background-color: #508897;
     border-radius: 3px;
     margin: 3px;
+}
+*/
+
+.container{
+    background-color:#28ee00;
+    padding: 10px 10px;
+    display: flex;
+}
+
+.box{
+    background-color:aqua;
+    color:azure;
+    padding: 10px 10px;
+    margin: 5;
 }
