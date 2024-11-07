@@ -5,7 +5,8 @@ Heading colors: #F0C548
 Highlight colors: #c50e0e
 */
 body{
-    background-color: #93979D;
+    background-color: #111113;
+    color: azure;
 }
 
 .image {
@@ -30,7 +31,7 @@ nav{
     position: sticky;
     top:0;
     overflow: hidden;
-    background-color:#556473;
+    background-color:#020ca0;
     height:auto;
 }
 
@@ -47,13 +48,17 @@ nav{
 
 .navbar li a{
     display: block;
-    color: rgba(255, 255, 255, 0.521);
+    color: rgba(255, 255, 255, 0.904);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .navbar li a:hover{
+    color: #fa0400;
+}
+
+.hover:hover{
     color: #fa0400;
 }
 
@@ -89,14 +94,38 @@ a:hover{
 */
 
 .container{
-    background-color:#28ee00;
+    background-color:#173f52;
     padding: 10px 10px;
     display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    height: 300px;
+    align-items: flex-start;
+    align-items: center;
+    align-items: flex-end;
 }
 
 .box{
-    background-color:aqua;
-    color:azure;
+    background-color:#04D9FF;
+    color:#302b26;
     padding: 10px 10px;
     margin: 5;
+}
+
+.flex-grow1{
+    flex-grow: 2;
+}
+
+.flex-grow2{
+    flex-grow: 2;
+}
+
+.flex-grow3{
+    flex-grow: 2;
+}
+
+.flex-grow4{
+    flex-grow: 2;
 }
