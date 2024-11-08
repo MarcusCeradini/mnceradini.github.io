@@ -13,4 +13,29 @@
     <h1>Contacts</h1>
     <h3>School email: mnceradini@my.waketech.edu</h3>
     <h3>Personal email: mrmmnc2020@gmail.com</h3>
+    <!--
+    has to have Name, Email, Message, Submit button, phone number field with "XXX-XXX-XXXX", 
+    radio button selection to select either Question or Comment or Suggestion"
+    -->
+    <section class = "form cards">
+        <div class = "flex-container">
+            <legend style = "color: #04D9FF">Give me Feedback</legend>
+            <section class = "form_fill_out">
+                <form>
+                    <label for="name">Full Name (Last,First):</label>
+                    <input type="text" id="name" name="name" style="color: #0a0b42" required>
+                    <br><hr style="width: 100px">
+
+                    <label for="email">Email (preferred email):</label>
+                    <input type="text" id="email" name="email" style="color: #0a0b42" required>
+                    <br><hr style="width: 100px">
+
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="number" name="nuber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="color: #0a0b42" required>
+                    <br><hr style="width: 100px">
+
+                </form>
+            </section>
+        </div>
+    </section>
 </body>
