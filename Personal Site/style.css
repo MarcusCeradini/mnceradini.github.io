@@ -72,12 +72,6 @@ nav{
     clear:both;
 }
 
-@media screen and (max-width: 600px){
-    .column{
-        width:50%;
-    }
-}
-
 .section_titles{
     color: #F0C548;
     text-align: Center;
@@ -92,6 +86,12 @@ a:hover{
     margin: 3px;
 }
 */
+
+@media screen and (max-width: 600px){
+    .column{
+        width:50%;
+    }
+}
 
 .container{
     background-color:#173f52;
