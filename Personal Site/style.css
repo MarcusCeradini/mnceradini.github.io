@@ -1,14 +1,13 @@
 /* Color Palette
 background color: #1E201E
-Text color outside of boxes: #7A668F
+Text color: azure
 Nav bar color: #5D728E
 Container color: #747C8E
 box color: #5D728E
-text color inside of box: azure
 */
 body{
     background-color: #1E201E;
-    color: #7A668F;
+    color: azure;
 }
 
 .image {
