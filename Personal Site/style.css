@@ -1,12 +1,14 @@
 /* Color Palette
-background color: #93979D
-Nav bar color: #556473
-Heading colors: #F0C548
-Highlight colors: #c50e0e
+background color: #1E201E
+Text color outside of boxes: #7A668F
+Nav bar color: #5D728E
+Container color: #747C8E
+box color: #5D728E
+text color inside of box: azure
 */
 body{
-    background-color: #111113;
-    color: azure;
+    background-color: #1E201E;
+    color: #7A668F;
 }
 
 .image {
@@ -31,7 +33,7 @@ nav{
     position: sticky;
     top:0;
     overflow: hidden;
-    background-color:#020ca0;
+    background-color:#5D728E;
     height:auto;
 }
 
@@ -87,45 +89,58 @@ a:hover{
 }
 */
 
-@media screen and (max-width: 600px){
-    .column{
-        width:50%;
+@media screen and (max-width: 1000px){
+    .container {
+        flex-direction: column;
     }
 }
 
 .container{
-    background-color:#173f52;
+    background-color:#747C8E;
     padding: 10px 10px;
     display: flex;
-    justify-content: flex-start;
     justify-content: center;
-    justify-content: space-between;
-    justify-content: space-around;
-    height: 300px;
-    align-items: flex-start;
+    /* height: 300px; */
     align-items: center;
-    align-items: flex-end;
 }
 
 .box{
-    background-color:#04D9FF;
-    color:#302b26;
+    background-color:#5D728E;
+    color:azure;
     padding: 10px 10px;
     margin: 5;
+    display: inline-block;
+    width: 100%;
 }
 
 .flex-grow1{
+    float: bottom;
+    border-bottom: 10px solid #747C8E;
+    padding: 10px 10px;
+    margin: 5;
     flex-grow: 2;
 }
 
 .flex-grow2{
+    float: bottom;
+    border-bottom: 10px solid #747C8E;
+    padding: 10px 10px;
+    margin: 5;
     flex-grow: 2;
 }
 
 .flex-grow3{
+    float: bottom;
+    border-bottom: 10px solid #747C8E;
+    padding: 10px 10px;
+    margin: 5;
     flex-grow: 2;
 }
 
 .flex-grow4{
+    float: bottom;
+    border-bottom: 10px solid #747C8E;
+    padding: 10px 10px;
+    margin: 5;
     flex-grow: 2;
 }

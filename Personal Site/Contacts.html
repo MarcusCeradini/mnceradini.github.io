@@ -13,13 +13,10 @@
     <h1>Contacts</h1>
     <h3>School email: mnceradini@my.waketech.edu</h3>
     <h3>Personal email: mrmmnc2020@gmail.com</h3>
-    <!--
-    has to have Name, Email, Message, Submit button, phone number field with "XXX-XXX-XXXX", 
-    radio button selection to select either Question or Comment or Suggestion"
-    -->
+    <br>
     <section class = "form cards">
         <div class = "flex-container">
-            <legend style = "color: #04D9FF">Give me Feedback</legend>
+            <h2 style = "color: azure">Give me Feedback</h2>
             <section class = "form_fill_out">
                 <form>
                     <label for="name">Full Name (Last,First):</label>
@@ -33,6 +30,25 @@
                     <label for="number">Phone Number:</label>
                     <input type="tel" id="number" name="nuber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="color: #0a0b42" required>
                     <br><hr style="width: 100px">
+
+                    <section class="radio">
+                        <input type="radio" id="Question" name="answer" value="Question">
+                        <label for="Question">Questions</label>
+
+                        <input type="radio" id="Comment" name="answer" value="Comment">
+                        <label for="Comment">Comments</label>
+
+                        <input type="radio" id="Comment" name="answer" value="Comment">
+                        <label for="Comment">Concerns</label>
+
+                        <input type="radio" id="Suggestion" name="answer" value="Suggestion">
+                        <label for="Suggestion">Suggestions</label>
+
+                    </section>
+                    <textarea id="message" name="message" minlength="10" style="color: #2155A9; min-width: 225px"></textarea>
+                    <br><hr style="width: 100px">
+
+                    <input id="submit" type="submit" value="Submit">
 
                 </form>
             </section>
